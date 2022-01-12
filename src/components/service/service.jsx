@@ -7,6 +7,6 @@ export const getProducts = {
         return axios.get(apiAdress)
     },
     getProductById: (id) => {
-        return axios.get(apiAdress + toString(id))
+        return axios.get(apiAdress + id)
     }
 }

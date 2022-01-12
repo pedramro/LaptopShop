@@ -3,18 +3,25 @@ import { useParams } from 'react-router-dom'
 import { getProducts } from '../service/service'
 
 function Detail() {
-    const [state, setState] = useState({})
+    const [state, setState] = useState({product: {}})
 
-    let id = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
-        getProducts.getProductById(id).then(response => console.log(response))
+        getProducts.getProductById(id).then(response => setState({product: response.data}))
     }, [])
 
-    return (
-        <div className='row'>
-            <div className="col-4">
+    const { product } = state
 
+    return (
+        <div className='row mt-5'>
+            <div className="col-7">
+                <img width='100%' src={product.pic} title={product.title} />
+            </div>
+            <div className="col-5">
+                <h1>{product.title}</h1>
+                <p>{product.desc}</p>
+                <button className='btn btn-primary'>Add to Cart</button>
             </div>
         </div>
     )
