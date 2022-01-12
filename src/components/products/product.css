@@ -1,7 +1,19 @@
+.title-lines{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+}
 .desc-lines{
     overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
    -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
+}
+.btn-products{
+    position: 'absolute';
+    bottom: 10px;
+    width: '92%';
 }

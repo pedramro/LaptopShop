@@ -15,10 +15,10 @@ function Detail() {
 
     return (
         <div className='row mt-5'>
-            <div className="col-7">
+            <div className="col-6">
                 <img width='100%' src={product.pic} title={product.title} />
             </div>
-            <div className="col-5">
+            <div className="col-6">
                 <h1>{product.title}</h1>
                 <p>{product.desc}</p>
                 <button className='btn btn-primary'>Add to Cart</button>

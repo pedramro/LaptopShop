@@ -1,0 +1,17 @@
+.cart-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+.count-icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count-text{
+    font-size: 11px;
+}
