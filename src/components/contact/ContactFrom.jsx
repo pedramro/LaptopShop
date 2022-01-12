@@ -12,15 +12,15 @@ function ContactFrom() {
                     </div>
                 </div>
                 <div>
-                    <label className='d-block mx-3 mt-3'>Email <span className='text-danger fw-bold'>*</span></label>
+                    <label className='d-block mx-3 mt-3 mb-1'>Email <span className='text-danger fw-bold'>*</span></label>
                     <input type="text" className='form-control' placeholder='Enter Your Email' />
                 </div>
                 <div>
-                    <label className='d-block mx-3 mt-3'>Phone Number</label>
+                    <label className='d-block mx-3 mt-3 mb-1'>Phone Number</label>
                     <input type="text" className='form-control' placeholder='Enter Your Phone Number' />
                 </div>
                 <div>
-                    <label className='d-block mx-3 mt-3'>Comment or Massage <span className='text-danger fw-bold'>*</span></label>
+                    <label className='d-block mx-3 mt-3 mb-1'>Comment or Massage <span className='text-danger fw-bold'>*</span></label>
                     <textarea type="text" rows='5' className='form-control' placeholder='Enter Your Phone Number' />
                 </div>
                 <div className='mt-3 mx-3'>

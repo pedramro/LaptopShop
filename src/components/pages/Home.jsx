@@ -13,7 +13,7 @@ function Home() {
     
 
     return (
-        <div className='mt-5'>
+        <div className='my-5 pt-4'>
             <ProductList products={state.products} />
         </div>
     )

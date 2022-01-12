@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-/mock-server
+/mock-server/node_modules
 .pnp.js
 
 # testing

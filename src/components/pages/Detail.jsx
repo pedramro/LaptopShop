@@ -14,7 +14,7 @@ function Detail() {
     const { product } = state
 
     return (
-        <div className='row mt-5'>
+        <div className='row mt-5 pt-5'>
             <div className="col-6">
                 <img width='100%' src={product.pic} title={product.title} />
             </div>
