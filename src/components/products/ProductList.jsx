@@ -3,11 +3,10 @@ import Product from './Product'
 
 function ProductList({products}) {
 
-    
 
     return (
         <div>
-            <Product products={products} />
+            <Product />
         </div>
     )
 }

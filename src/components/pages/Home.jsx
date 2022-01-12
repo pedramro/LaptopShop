@@ -11,11 +11,12 @@ class Home extends React.Component {
             let response = await getProducts.getAllProducts()
             console.log(response.data);
             this.setState({products: response.data})
+            console.log(this.state);
         }
         fetch()
     }
     
-
+    
     render() {
         return (
             <div>

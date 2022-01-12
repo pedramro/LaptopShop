@@ -5,11 +5,13 @@ import Home from "./components/pages/Home";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
+      <div className="app">
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   )
