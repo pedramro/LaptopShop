@@ -8,7 +8,7 @@ function ProductList({products}) {
     return (
         <div className="row">
             {
-                products.map((product, index) => <div className='col-4' key={index}>
+                products.map((product, index) => <div style={{position: 'relative'}} className='col-4' key={index}>
                 <Product product={product} />
                 </div>)
             }
