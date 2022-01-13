@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom'
 import './product.css'
 
 function Product({product}) {
+
+    
+
     return (
             <div style={{height: 550}} className="shadow card card-body mt-3">
                 <img height={300} src={product.pic} className="card-img-top" />
