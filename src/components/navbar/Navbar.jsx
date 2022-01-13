@@ -30,10 +30,12 @@ function Navbar() {
                         <Link to='contact/' className="text-light nav-link">Contact</Link>
                         </li>
                     </ul>
-                    <div className='cart-wrapper mx-3'>
-                        <Cart />
-                       {count && <span className='count-icon badge bg-danger rounded-circle'><span className='count-text'>{count}</span></span>}
-                    </div>
+                    <Link to='/cart'>
+                        <div className='cart-wrapper mx-3'>
+                            <Cart />
+                        {count ? <span className='count-icon badge bg-danger rounded-circle'><span className='count-text'>{count}</span></span> : ''}
+                        </div>
+                    </Link>
                     <form className="d-flex">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button className="btn btn-outline-success" type="submit">Search</button>
