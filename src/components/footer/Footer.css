@@ -1,0 +1,15 @@
+.footer-wrapper{
+    background-color: rgb(37, 36, 36);
+    height: 200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0,0.5);
+}
+.title{
+    border-left: 3px solid purple;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}

@@ -27,21 +27,22 @@ function Detail() {
     console.log(product);
 
     return (
-        <>
+        <div>
         <div className='row mt-5 pt-5'>
             <div className="col-6">
-                <img width='100%' src={product.pic} title={product.title} />
+                <img width='100%' src={product.pic} title={product.title} alt={product.title} />
             </div>
             <div className="col-6">
                 <h1>{product.title}</h1>
                 <p>{product.desc}</p>
-                <button onClick={addItemToCart} className='btn btn-primary'>Add to Cart</button>
+                <h5>Price: {product.price}</h5>
+                <button onClick={addItemToCart} className='btn btn-primary mt-2'>Add to Cart</button>
             </div>
         </div>
-        <h4 className='text-center mt-5'>Reviews</h4>
+        <h4 className='text-center mt-5 pt-5'>Reviews</h4>
         <hr className='mb-5' />
         <Comments comments={product.comments} />
-        </>
+        </div>
     )
 }
 

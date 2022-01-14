@@ -8,13 +8,13 @@ function CartPage() {
 
     if (!cartItems.length){
         return (
-        <div className='mt-5 pt-5'>
+        <div className='mt-5 pt-5' style={{height: '100vh'}}>
             <h1 className='display-5 text-center'>Cart is Empty</h1>
         </div>
     )}
 
     return (
-        <>
+        <div style={{height: '100vh'}}>
             <table style={{marginTop: 80}} className="table">
                 <thead>
                     <tr>
@@ -30,7 +30,7 @@ function CartPage() {
                 {cartItems.map((item, index) => <CartList item={item} key={index} index={index} />)}
             </tbody>
             </table>
-        </>  
+        </div>  
     )
 }
 

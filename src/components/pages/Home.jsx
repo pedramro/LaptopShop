@@ -11,6 +11,11 @@ function Home() {
         getProducts.getAllProducts().then(response => setState({products: response.data}))
     }, [])
     
+    if (!state) {
+        return (
+            <h4 className='py-5 my-5'>Loading ...</h4>
+        )
+    }
 
     return (
         <div className='my-5 pt-4'>

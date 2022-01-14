@@ -3,7 +3,7 @@ import ContactFrom from '../contact/ContactFrom'
 
 function Contact() {
     return (
-        <div className='mt-5 pt-5'>
+        <div className='mt-5 pt-5' style={{height: '100vh'}}>
             <div>
                 <h1 className='text-center'>
                 <svg  xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" className="mb-1 mx-2 text-success bi bi-telephone" viewBox="0 0 16 16">

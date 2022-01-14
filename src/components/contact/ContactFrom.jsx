@@ -23,7 +23,7 @@ function ContactFrom() {
                     <label className='d-block mx-3 mt-3 mb-1'>Comment or Massage <span className='text-danger fw-bold'>*</span></label>
                     <textarea type="text" rows='5' className='form-control' placeholder='Enter Your Phone Number' />
                 </div>
-                <div className='mt-3 mx-3'>
+                <div className='my-3 mx-3'>
                     <button className='btn btn-primary'>Submit</button>
                 </div>
             </form>

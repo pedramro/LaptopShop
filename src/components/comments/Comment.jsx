@@ -5,7 +5,7 @@ function Comment({comment}) {
         <>
             <div className='d-flex mb-3'>
                 <div style={{width: '80px'}}>
-                    <img className='rounded-circle' src={comment.pic} width='100%' />
+                    <img className='rounded-circle' src={comment.pic} width='100%' alt={comment.author} />
                 </div>
                 <h3 className='mt-4 mx-3'>{comment.author}</h3>
             </div>
