@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getProducts } from '../service/service'
 import { store } from '../../index'
 import { addToCart } from '../actions'
+import Comments from '../comments/Commnets'
 
 function Detail() {
     const [state, setState] = useState({product: {}})
@@ -23,9 +24,10 @@ function Detail() {
         store.dispatch(addToCart(product))
     }
 
-    
+    console.log(product);
 
     return (
+        <>
         <div className='row mt-5 pt-5'>
             <div className="col-6">
                 <img width='100%' src={product.pic} title={product.title} />
@@ -36,6 +38,10 @@ function Detail() {
                 <button onClick={addItemToCart} className='btn btn-primary'>Add to Cart</button>
             </div>
         </div>
+        <h4 className='text-center mt-5'>Reviews</h4>
+        <hr className='mb-5' />
+        <Comments comments={product.comments} />
+        </>
     )
 }
 

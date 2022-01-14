@@ -22,7 +22,7 @@ function CartPage() {
                     <th scope="col">Name</th>
                     <th scope="col">Price</th>
                     <th scope='col'>Total Price</th>
-                    <th scope="col">Count</th>
+                    <th scope="col">Quantity</th>
                     <th scope="col"></th>
                     </tr>
                 </thead>
