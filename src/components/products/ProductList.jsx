@@ -10,7 +10,7 @@ function ProductList({products}) {
     return (
         <div className="row">
             {
-                products.map((product, index) => <div style={{position: 'relative'}} className='col-4' key={index + 1}>
+                products.map((product, index) => <div style={{position: 'relative'}} className='col-lg-4 col-md-6' key={index + 1}>
                     <Product product={product} />
                 </div>)
             }

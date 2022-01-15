@@ -1,10 +1,11 @@
 import React from 'react'
 
 function Subscribe() {
+    const pattern = /^[a-zA-Z0-9.@]{12,64}$/;
     function subscribe(){
         let massage = document.getElementById('massage')
         let inputValue = document.getElementById('email').value
-        if (inputValue) {
+        if (inputValue && pattern.test(inputValue)) {
             massage.classList.add('text-success')
             massage.textContent = 'All discount will be send to your email.'
             setTimeout(() => {
