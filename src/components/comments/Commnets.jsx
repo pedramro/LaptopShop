@@ -5,7 +5,7 @@ function Comments({comments}) {
     console.log(comments);
     if (!comments) {
         return (
-            <div className='mt-5 pt-5'>
+            <div className='my-5 py-5'>
                 <h1 className='text-center'>No Review</h1>
             </div>
         )
