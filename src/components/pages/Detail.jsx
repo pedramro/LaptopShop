@@ -7,6 +7,11 @@ import Comments from '../comments/Commnets'
 
 function Detail() {
     const [state, setState] = useState({product: {}})
+    const [refresh, setRefresh] = useState({ref: 0})
+
+    function refreshPage(num) {
+        setRefresh({ref: refresh.ref + num})
+    }
 
     const { id } = useParams()
 
@@ -24,8 +29,6 @@ function Detail() {
         store.dispatch(addToCart(product))
     }
 
-    console.log(product);
-
     return (
         <div>
         <div className='row mt-5 pt-5'>
@@ -41,7 +44,7 @@ function Detail() {
         </div>
         <h4 className='text-center mt-5 pt-5'>Reviews</h4>
         <hr className='mb-5' />
-        <Comments comments={product.comments} />
+        <Comments comments={product.comments} id={id} refresh={refreshPage} />
         </div>
     )
 }

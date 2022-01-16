@@ -8,5 +8,8 @@ export const getProducts = {
     },
     getProductById: (id) => {
         return axios.get(apiAdress + id)
+    },
+    addComment: (id, comment) => {
+        axios.post(apiAdress + id + '/comments/', comment)
     }
 }

@@ -10,7 +10,7 @@ function Navbar() {
     const count = useSelector(state => state.cart.length)
     
     return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top" style={{boxShadow: '0px 2px 15px rgba(0, 0, 0,0.7)'}}>
+            <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top py-3" style={{boxShadow: '0px 2px 15px rgba(0, 0, 0,0.7)'}}>
                 <div className="container-fluid">
                     <Link to='/' className="navbar-brand fw-bold text-warning">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="text-warning mx-2 bi bi-shop" viewBox="0 0 16 16">

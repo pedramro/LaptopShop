@@ -16,6 +16,8 @@ function Footer() {
             <div className='col-lg-3 col-sm-12 h-100 text-white d-flex justify-content-center align-items-center flex-column'>
                 <Subscribe />
             </div>
+            <hr className='bg-white w-75 mx-auto mt-4' />
+            <small className='text-warning text-center py-2'>Designed By Pedram</small>
         </footer>
     )
 }
