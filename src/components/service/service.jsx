@@ -11,5 +11,5 @@ export const getProducts = {
     },
     addComment: (id, comment) => {
         axios.post(apiAdress + id + '/comments/', comment)
-    }
+    },
 }

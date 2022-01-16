@@ -32,10 +32,10 @@ function Detail() {
     return (
         <div>
         <div className='row mt-5 pt-5'>
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
                 <img width='100%' src={product.pic} title={product.title} alt={product.title} />
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-sm-12">
                 <h1>{product.title}</h1>
                 <p>{product.desc}</p>
                 <h5>Price: {product.price}</h5>
