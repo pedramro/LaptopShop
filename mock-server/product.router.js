@@ -15,8 +15,8 @@ const data = {
           16 GB DDR4 2666MHz Memory, 512GB PCIe NVMe SSD (2 x PCIe M. 2 Slots | 1 Slot Open for Easy Upgrades) & 1 - Available Hard Drive Bay
           Backlit Keyboard | LAN: Killer Gaming Network E2500 | Wireless: Killer DoubleShot Pro Wireless-AX 1650 WiFi 6 802. 11ac | 4th Gen All-Metal AeroBlade 3D Fan`,
       comments: [
-        {pic:'https://image.freepik.com/free-vector/smiling-girl-avatar_102172-32.jpg', author: 'Masume', text: `Parents bought this for my sister and this is perfect for her to start on it's good for light-medium gaming. With school converting to online it's perfect as well. This computer also has good battery life away from the charger while might use with heavy use not so much it's good though. Overall the computer is good for it's current price and an amazing deal.`},
-        {pic:'https://incovade.com/wp-content/themes/cera/assets/images/avatars/user-avatar.png', author: 'Ahmad', text: 'Absolutely amazing laptop! Runs games with zero lag. I was lucky to get it for $579, and would recommend checking this frequently as it goes super fast at that price.'}
+        {author: 'Jennifer', text: `Parents bought this for my sister and this is perfect for her to start on it's good for light-medium gaming. With school converting to online it's perfect as well. This computer also has good battery life away from the charger while might use with heavy use not so much it's good though. Overall the computer is good for it's current price and an amazing deal.`},
+        {author: 'Kimberly Engel', text: 'Absolutely amazing laptop! Runs games with zero lag. I was lucky to get it for $579, and would recommend checking this frequently as it goes super fast at that price.'}
       ]
     },
     {

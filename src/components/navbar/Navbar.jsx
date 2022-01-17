@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { Cart } from '../cart'
 import './Navbar.css'
 import { useSelector } from 'react-redux'
+import SearchForm from './SearchForm'
 
 
 function Navbar() {
@@ -36,10 +37,7 @@ function Navbar() {
                         {count ? <span className='count-icon badge bg-danger rounded-circle'><span className='count-text'>{count}</span></span> : ''}
                         </div>
                     </Link>
-                    <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <SearchForm />
                     </div>
                 </div>
             </nav>
